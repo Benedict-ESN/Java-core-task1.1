@@ -10,7 +10,7 @@ public class Main {
         int b = calc.minus.apply(1, 1);
         int c = 0;
         try {
-            c = calc.divide.apply(a, b); // Попытка деления
+            c = calc.divide.apply(a, b); // Попытка деления на 0
         } catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage()); // Обработка исключения при делении на ноль
         }
